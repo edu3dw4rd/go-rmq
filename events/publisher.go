@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"go-rmq/rmq"
+	"github.com/edu3dw4rd/rmq"
 
 	"github.com/assembla/cony"
 	"github.com/streadway/amqp"
