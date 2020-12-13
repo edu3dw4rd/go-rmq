@@ -92,7 +92,7 @@ func (data *EventData) Publish(exchangeName string) {
 // PublishDelayExchange publishes given data to given exchange with given delay time in milliseconds
 func (data *EventData) PublishDelayExchange(exchangeName string, delayMillis int64) {
 	go func() {
-		connURL := rabbitmq.GetRabbitURL()
+		connURL := rmq.GetRabbitURL()
 		// fmt.Printf("CONNURL: %+v\n", connURL)
 
 		defer func() {
